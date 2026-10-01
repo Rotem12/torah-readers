@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "V0DPwJLP",
+  "version": "NUFXvNHg",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -150,16 +150,20 @@ self.assetsManifest = {
       "url": "_framework/System.Threading.8ak7qnz1xz.wasm"
     },
     {
-      "hash": "sha256-lKmCS0B3zm9o4SlU1/v+2PerIk6vv9vBdgp8n1bAioc=",
-      "url": "_framework/TorahReaders.Core.se4dy8hrk2.wasm"
+      "hash": "sha256-8Fbty7oSYfX0/5DuwNJL4HdNbMZyXsDhi3qNmoEEqxY=",
+      "url": "_framework/TorahReaders.Core.kn0vwp31vl.wasm"
     },
     {
-      "hash": "sha256-Quy+rXcL+SVFa0/dz7qaTyB496VlApi5Js4OSKOw7RY=",
-      "url": "_framework/TorahReaders.Web.mnf05e4xz9.wasm"
+      "hash": "sha256-BWUr2S3aj4siuIrFYtxggQlzRONSLcEsa5pXsbOksj0=",
+      "url": "_framework/TorahReaders.Web.x5z8106g9t.wasm"
     },
     {
       "hash": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
+    },
+    {
+      "hash": "sha256-+eVe+9cskxTIyMIbNMfkGw63tSeRdas+H49DSGXJuTM=",
+      "url": "_framework/dotnet.j5syfyuljb.js"
     },
     {
       "hash": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
@@ -172,10 +176,6 @@ self.assetsManifest = {
     {
       "hash": "sha256-QbnqrZGHtGq7wudS17/AYEPpH9JkphrsyVllD6JHmds=",
       "url": "_framework/dotnet.runtime.v06hirbjsv.js"
-    },
-    {
-      "hash": "sha256-IeBDKE31Cx9gnOPnT3iw/eTR4/vGu9byjgKM/lXqhQ4=",
-      "url": "_framework/dotnet.tdvxbansma.js"
     },
     {
       "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -210,7 +210,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-wg6DwrBTgUEvzlN/eIa6aBY4qvxCHTOE+3Ng6UkIwiw=",
+      "hash": "sha256-JsWdGXwRp930XWtU7OFa+bylwn/hXvkaDzKnDb0juOc=",
       "url": "index.html"
     },
     {

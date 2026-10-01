@@ -1,11 +1,14 @@
-/* Manifest version: V0DPwJLP */
+/* Manifest version: NUFXvNHg */
 self.importScripts('./service-worker-assets.js');
 
 // Each project site owns only its own application files on github.io.
 const baseUrl = new URL('./', self.location.href);
 const cachePrefix = 'torah-readers-shell|' + baseUrl.pathname + '|';
 const cacheName = cachePrefix + self.assetsManifest.version;
+// .nojekyll configures Pages, but Pages does not serve that dotfile. A 404
+// would reject the entire cache installation, including the offline shell.
 const assets = self.assetsManifest.assets.filter(asset =>
+    asset.url !== '.nojekyll' &&
     !/^service-worker(?:\.published)?\.js$/.test(asset.url) && !/\.pdb$/.test(asset.url));
 const assetUrls = new Set(assets.map(asset => new URL(asset.url, baseUrl).href));
 
