@@ -1,4 +1,4 @@
-/* Manifest version: i5td9Gr1 */
+/* Manifest version: EO6+GtQf */
 self.importScripts('./service-worker-assets.js');
 
 // Each project site owns only its own application files on github.io.
