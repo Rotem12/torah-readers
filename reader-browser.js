@@ -42,6 +42,24 @@
   window.addEventListener("pagehide", saveViewport);
   document.addEventListener("visibilitychange", () => { if (document.hidden) saveViewport(); });
   window.readerBrowser = {
+    readBookmarks(reader, backup) {
+      return localStorage.getItem('torah-reader-bookmarks-v1|' + reader + (backup ? '|backup' : ''));
+    },
+    writeBookmarks(reader, json, previous) {
+      try {
+        const key = 'torah-reader-bookmarks-v1|' + reader;
+        localStorage.setItem(key + '|backup', previous);
+        localStorage.setItem(key, json);
+        return true;
+      } catch { return false; }
+    },
+    visibleText() {
+      return [...document.querySelectorAll('.passage[data-reference]')].map(row => ({
+        key:row.dataset.key, reference:row.dataset.reference, start:Number(row.dataset.start),
+        text:[...row.querySelectorAll('.reader-text,.translation')].map(text => text.textContent).join('\n')
+      }));
+    },
+    blurSearch() { document.querySelector('.reader-search input')?.blur(); },
     readSpot(reader) {
       try { return localStorage.getItem(prefix + reader); } catch { return null; }
     },
