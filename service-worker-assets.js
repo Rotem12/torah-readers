@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "xHXqmatH",
+  "version": "xIIUHmtV",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -90,8 +90,8 @@ self.assetsManifest = {
       "url": "_framework/System.IO.Pipelines.px0vglstfo.wasm"
     },
     {
-      "hash": "sha256-GAf7J67irW/Zk6LnWv+/fV1czzf4LaMRDBm0DRqC9Hs=",
-      "url": "_framework/System.Linq.c3vu4rz4t5.wasm"
+      "hash": "sha256-ojMwuT6KaglQCQPHDt4g8onKyrhYdAPEih80J8Q2Mc0=",
+      "url": "_framework/System.Linq.m3audmmw4r.wasm"
     },
     {
       "hash": "sha256-m0n7rRLsNRQhBinfK5Uxk3QHKSyUTL0ve+kF8ICrN5c=",
@@ -114,20 +114,20 @@ self.assetsManifest = {
       "url": "_framework/System.ObjectModel.aj4d5ys7y6.wasm"
     },
     {
-      "hash": "sha256-GzasDU6fdvSPL1s3YHpX61+wmjG8Ds4CGaHvdpjOum0=",
-      "url": "_framework/System.Private.CoreLib.pjmv6oi8j0.wasm"
+      "hash": "sha256-CG/yTUZ2EkBevLN58xagobaLh/4/agS5DZzxZotrhNc=",
+      "url": "_framework/System.Private.CoreLib.4lhgaub2de.wasm"
     },
     {
       "hash": "sha256-9ZMHn7Toz62wlLZPqashUwd0SGov/s5I+0wWXAxacUY=",
       "url": "_framework/System.Private.Uri.bk34xc5z6l.wasm"
     },
     {
-      "hash": "sha256-2eoaL+/vGjAstq3asm4Ladm/qZVo8V9WUhxTS7DcieQ=",
-      "url": "_framework/System.Runtime.1y9epu1na8.wasm"
-    },
-    {
       "hash": "sha256-subN4GeRX41RGMetqHoww+/Yr+o/uCpaS9oTrMeKJr0=",
       "url": "_framework/System.Runtime.InteropServices.JavaScript.ae3uao1vst.wasm"
+    },
+    {
+      "hash": "sha256-mwhCF6s8Oa+sPgkNqcXjpkYf5728VsEjtXvQGyUbSUQ=",
+      "url": "_framework/System.Runtime.hxzanz8rvb.wasm"
     },
     {
       "hash": "sha256-cTpFIxaNUWLXKQa2yGmNxTQNwgdyj7W4RAOSXRdsk50=",
@@ -138,8 +138,8 @@ self.assetsManifest = {
       "url": "_framework/System.Text.Encodings.Web.poz8e5l19c.wasm"
     },
     {
-      "hash": "sha256-jiPFyTlsFEjFqLQ160dCCN82Q5zF5N5ZXWiDlTzIXLc=",
-      "url": "_framework/System.Text.Json.m3r9boyiie.wasm"
+      "hash": "sha256-Pa0+LBaUqyjIIZw2rSqQTb47OVrYsE28Pt4LPIF51+U=",
+      "url": "_framework/System.Text.Json.jg74w5o2r9.wasm"
     },
     {
       "hash": "sha256-hCnWXNOlA+vsErdXGZ47NjAuLVufQx9Ums3P6h3r17M=",
@@ -150,20 +150,20 @@ self.assetsManifest = {
       "url": "_framework/System.Threading.8ak7qnz1xz.wasm"
     },
     {
-      "hash": "sha256-ci1g4c5xPwjWj2cQvRVkswkAWMENqNMQEIgn0xZpILo=",
-      "url": "_framework/TorahReaders.Core.usoordvsat.wasm"
+      "hash": "sha256-M6GtClLCfpiNSR3s4+VX4ilJX4NZY5LzQe4NN8dCbWA=",
+      "url": "_framework/TorahReaders.Core.xjg8593prc.wasm"
     },
     {
-      "hash": "sha256-46rj1IhBjwc55MXtghpHeCioUTPai7W1dxfWWiJ83p8=",
-      "url": "_framework/TorahReaders.Web.b60wmv7z77.wasm"
+      "hash": "sha256-J6xBX+9uucuW+LaT18nOLwGrFRwBkNJZWmV1BFu3mO4=",
+      "url": "_framework/TorahReaders.Web.9sadssloz6.wasm"
     },
     {
       "hash": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
     },
     {
-      "hash": "sha256-yeg58MED6UHzqqZI2o2/VbLC7GKXXftvQG57WdvCp4M=",
-      "url": "_framework/dotnet.74u3w3lwj2.js"
+      "hash": "sha256-webIi10yUwDDEK9hggkg19VoVVVCfFM5VPOZr47yQB4=",
+      "url": "_framework/dotnet.3j9k4env5d.js"
     },
     {
       "hash": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
@@ -194,7 +194,7 @@ self.assetsManifest = {
       "url": "book.svg"
     },
     {
-      "hash": "sha256-GLyTMJ1KOraXpR/ntGKv5INHt7AYwYbgYeE/i61jZwc=",
+      "hash": "sha256-SW1+hbBiNZvKgJeN0Y+gR34i3Tffd3Vi1VpJIi6C2Pg=",
       "url": "css/app.css"
     },
     {
@@ -210,7 +210,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-Seo0+74mdql+oYjwbMUl4sZJ4/y5j6KJFw8pJjq82vM=",
+      "hash": "sha256-NdgB1c2zJyrYtjo5wMDn95yDoNKQRoFoalfuwpmftI4=",
       "url": "index.html"
     },
     {
