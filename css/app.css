@@ -1,15 +1,15 @@
 :root { color-scheme:light; font-family:Arial,"Segoe UI",sans-serif; color:#1e293b; background:#f8fafc; font-synthesis:none; }
-@font-face { font-family:"Noto Serif Hebrew"; src:url("../fonts/NotoSerifHebrew.ttf") format("truetype"); font-weight:100 900; font-display:swap; }
-@font-face { font-family:"Noto Rashi Hebrew"; src:url("../fonts/NotoRashiHebrew-Variable.ttf") format("truetype"); font-weight:400 700; font-display:swap; }
-@font-face { font-family:"Cardo"; src:url("../fonts/Cardo-Regular.ttf") format("truetype"); font-weight:400; font-display:swap; }
-@font-face { font-family:"Noto Sans Hebrew"; src:url("../fonts/NotoSansHebrew.ttf") format("truetype"); font-weight:100 900; font-stretch:75% 125%; font-display:swap; }
-@font-face { font-family:"Frank Ruhl Libre"; src:url("../fonts/FrankRuhlLibre.ttf") format("truetype"); font-weight:100 900; font-display:swap; }
-@font-face { font-family:"David Libre"; src:url("../fonts/DavidLibre-Regular.ttf") format("truetype"); font-weight:400; font-display:swap; }
-@font-face { font-family:"David Libre"; src:url("../fonts/DavidLibre-Medium.ttf") format("truetype"); font-weight:500; font-display:swap; }
-@font-face { font-family:"David Libre"; src:url("../fonts/DavidLibre-Bold.ttf") format("truetype"); font-weight:700; font-display:swap; }
-@font-face { font-family:"Taamey Frank CLM"; src:url("../fonts/TaameyFrankCLM-Medium.ttf") format("truetype"); font-weight:400; font-display:swap; }
-@font-face { font-family:"Taamey Frank CLM"; src:url("../fonts/TaameyFrankCLM-Bold.ttf") format("truetype"); font-weight:700; font-display:swap; }
-@font-face { font-family:"Hebrew Sheva Fallback"; src:url("../fonts/ShevaNaFallback.ttf") format("truetype"); font-weight:100 900; font-display:swap; unicode-range:U+05C8; }
+@font-face { font-family:"Torah Reader Noto Serif Hebrew"; src:url("../fonts/NotoSerifHebrew-Nikud.ttf") format("truetype"); font-weight:100 900; font-stretch:62.5% 100%; font-display:swap; }
+@font-face { font-family:"Torah Reader Noto Rashi Hebrew"; src:url("../fonts/NotoRashiHebrew-Nikud.ttf") format("truetype"); font-weight:400 700; font-display:swap; }
+@font-face { font-family:"Torah Reader Cardo Hebrew"; src:url("../fonts/Cardo-Regular-Nikud.ttf") format("truetype"); font-weight:400; font-display:swap; }
+@font-face { font-family:"Torah Reader Noto Sans Hebrew"; src:url("../fonts/NotoSansHebrew-Nikud.ttf") format("truetype"); font-weight:100 900; font-stretch:62.5% 100%; font-display:swap; }
+@font-face { font-family:"Torah Reader Frank Ruhl Libre"; src:url("../fonts/FrankRuhlLibre-Nikud.ttf") format("truetype"); font-weight:300 900; font-display:swap; }
+@font-face { font-family:"Torah Reader David Libre"; src:url("../fonts/DavidLibre-Regular-Nikud.ttf") format("truetype"); font-weight:400; font-display:swap; }
+@font-face { font-family:"Torah Reader David Libre"; src:url("../fonts/DavidLibre-Medium-Nikud.ttf") format("truetype"); font-weight:500; font-display:swap; }
+@font-face { font-family:"Torah Reader David Libre"; src:url("../fonts/DavidLibre-Bold-Nikud.ttf") format("truetype"); font-weight:700; font-display:swap; }
+@font-face { font-family:"Torah Reader Taamey Frank CLM"; src:url("../fonts/TaameyFrankCLM-Medium-Nikud.ttf") format("truetype"); font-weight:400; font-display:swap; }
+@font-face { font-family:"Torah Reader Taamey Frank CLM"; src:url("../fonts/TaameyFrankCLM-Bold-Nikud.ttf") format("truetype"); font-weight:700; font-display:swap; }
+@font-face { font-family:"Torah Reader Hebrew Sheva Fallback"; src:url("../fonts/ShevaNaFallback-Nikud.ttf") format("truetype"); font-weight:100 900; font-display:swap; unicode-range:U+05C8; }
 * { box-sizing:border-box; }
 body { margin:0; }
 a { color:#2563eb; text-decoration:none; }
@@ -86,18 +86,21 @@ h1,h2,p { margin:0; }
 .reader-controls button { flex-shrink:0; }
 .reader-controls button { font-size:12px; }
 .reader-controls select { flex:0 0 160px; max-width:48vw; min-width:0; min-height:34px; padding:3px 5px; border:1px solid #cbd5e1; background:white; color:#334155; font-size:12px; }
+.nikud-size-control { display:inline-flex; flex:0 0 auto; align-items:center; gap:3px; color:#475569; font-size:11px; white-space:nowrap; }
+.nikud-size-control input { width:64px; min-height:20px; margin:0; padding:0; accent-color:#2563eb; direction:ltr; cursor:pointer; }
+.nikud-size-control output { min-width:30px; color:#334155; text-align:center; }
 .load-label { margin-inline-start:auto; color:#64748b; font-size:11px; }
 .passages { padding:0; }
 .passage { border:0; padding:0; margin:0; overflow-wrap:anywhere; }
 .reader-text { white-space:pre-wrap; line-height:inherit; }
 .original-text { padding:0; font-size:var(--reader-size,20px); line-height:1.35; }
-.reader[data-reader="torah"] .original-text { font-family:"Noto Serif Hebrew","Hebrew Sheva Fallback",serif; line-height:1.8; }
-.reader[data-reader="torah"][data-text-font="noto-rashi"] .original-text { font-family:"Noto Rashi Hebrew","Hebrew Sheva Fallback",serif; }
-.reader[data-reader="torah"][data-text-font="cardo"] .original-text { font-family:"Cardo","Hebrew Sheva Fallback",serif; }
-.reader[data-reader="torah"][data-text-font="noto-sans"] .original-text { font-family:"Noto Sans Hebrew","Hebrew Sheva Fallback",sans-serif; }
-.reader[data-reader="torah"][data-text-font="frank-ruhl"] .original-text { font-family:"Frank Ruhl Libre","Hebrew Sheva Fallback",serif; }
-.reader[data-reader="torah"][data-text-font="david-libre"] .original-text { font-family:"David Libre","Hebrew Sheva Fallback",serif; }
-.reader[data-reader="torah"][data-text-font="taamey-frank"] .original-text { font-family:"Taamey Frank CLM","Hebrew Sheva Fallback",serif; }
+.reader[data-reader="torah"] .original-text { font-family:"Torah Reader Noto Serif Hebrew","Torah Reader Hebrew Sheva Fallback",serif; font-variation-settings:"NIKD" var(--reader-nikud-extra,0); line-height:1.8; }
+.reader[data-reader="torah"][data-text-font="noto-rashi"] .original-text { font-family:"Torah Reader Noto Rashi Hebrew","Torah Reader Hebrew Sheva Fallback",serif; }
+.reader[data-reader="torah"][data-text-font="cardo"] .original-text { font-family:"Torah Reader Cardo Hebrew","Torah Reader Hebrew Sheva Fallback",serif; }
+.reader[data-reader="torah"][data-text-font="noto-sans"] .original-text { font-family:"Torah Reader Noto Sans Hebrew","Torah Reader Hebrew Sheva Fallback",sans-serif; }
+.reader[data-reader="torah"][data-text-font="frank-ruhl"] .original-text { font-family:"Torah Reader Frank Ruhl Libre","Torah Reader Hebrew Sheva Fallback",serif; }
+.reader[data-reader="torah"][data-text-font="david-libre"] .original-text { font-family:"Torah Reader David Libre","Torah Reader Hebrew Sheva Fallback",serif; }
+.reader[data-reader="torah"][data-text-font="taamey-frank"] .original-text { font-family:"Torah Reader Taamey Frank CLM","Torah Reader Hebrew Sheva Fallback",serif; }
 .verse-number { margin-inline-end:.45em; font-family:Arial,sans-serif; font-size:.65em; }
 .nikud-sheva-na { color:#1d4ed8; font-weight:650; }
 .nikud-sheva-nach { color:#596579; }
