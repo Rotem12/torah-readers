@@ -1,5 +1,7 @@
 :root { color-scheme:light; font-family:Arial,"Segoe UI",sans-serif; color:#1e293b; background:#f8fafc; font-synthesis:none; }
 @font-face { font-family:"Noto Serif Hebrew"; src:url("../fonts/NotoSerifHebrew.ttf") format("truetype"); font-weight:100 900; font-display:swap; }
+@font-face { font-family:"Noto Rashi Hebrew"; src:url("../fonts/NotoRashiHebrew-Variable.ttf") format("truetype"); font-weight:400 700; font-display:swap; }
+@font-face { font-family:"Cardo"; src:url("../fonts/Cardo-Regular.ttf") format("truetype"); font-weight:400; font-display:swap; }
 @font-face { font-family:"Noto Sans Hebrew"; src:url("../fonts/NotoSansHebrew.ttf") format("truetype"); font-weight:100 900; font-stretch:75% 125%; font-display:swap; }
 @font-face { font-family:"Frank Ruhl Libre"; src:url("../fonts/FrankRuhlLibre.ttf") format("truetype"); font-weight:100 900; font-display:swap; }
 @font-face { font-family:"David Libre"; src:url("../fonts/DavidLibre-Regular.ttf") format("truetype"); font-weight:400; font-display:swap; }
@@ -90,6 +92,8 @@ h1,h2,p { margin:0; }
 .reader-text { white-space:pre-wrap; line-height:inherit; }
 .original-text { padding:0; font-size:var(--reader-size,20px); line-height:1.35; }
 .reader[data-reader="torah"] .original-text { font-family:"Noto Serif Hebrew","Hebrew Sheva Fallback",serif; line-height:1.8; }
+.reader[data-reader="torah"][data-text-font="noto-rashi"] .original-text { font-family:"Noto Rashi Hebrew","Hebrew Sheva Fallback",serif; }
+.reader[data-reader="torah"][data-text-font="cardo"] .original-text { font-family:"Cardo","Hebrew Sheva Fallback",serif; }
 .reader[data-reader="torah"][data-text-font="noto-sans"] .original-text { font-family:"Noto Sans Hebrew","Hebrew Sheva Fallback",sans-serif; }
 .reader[data-reader="torah"][data-text-font="frank-ruhl"] .original-text { font-family:"Frank Ruhl Libre","Hebrew Sheva Fallback",serif; }
 .reader[data-reader="torah"][data-text-font="david-libre"] .original-text { font-family:"David Libre","Hebrew Sheva Fallback",serif; }
