@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "lVJDj4oF",
+  "version": "Z1AEvbSs",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -150,20 +150,20 @@ self.assetsManifest = {
       "url": "_framework/System.Threading.8ak7qnz1xz.wasm"
     },
     {
-      "hash": "sha256-ZqnZqcJjJ7mxfcyar+svnhJugUEzhqCrOUaDkiBa9RY=",
-      "url": "_framework/TorahReaders.Core.61bjo0og4o.wasm"
+      "hash": "sha256-JhzFp6PEu93l55JfHpzAkMmYaQ3a4IvG0naA9igvzSk=",
+      "url": "_framework/TorahReaders.Core.6tgryxp94h.wasm"
     },
     {
-      "hash": "sha256-izObbPQeXZaebSpdRqvortK/3q7nOB5q/XX3Qjdg7Fo=",
-      "url": "_framework/TorahReaders.Web.pn2op8xziq.wasm"
+      "hash": "sha256-ht6xE2SA8uSlg+IpSi/4eC7L+bKMJHSYuoCQv4OULBc=",
+      "url": "_framework/TorahReaders.Web.2uc28nn5p8.wasm"
     },
     {
       "hash": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
     },
     {
-      "hash": "sha256-vEBKUmtw2O7fvMHRB7sUZfaD04KbcZ8u5bOkdhyMCPA=",
-      "url": "_framework/dotnet.kkqf3ejy6k.js"
+      "hash": "sha256-8PXIJUU8ygcRT0kuI/KOm4vptRxQMHTnoWmqHGE5hfI=",
+      "url": "_framework/dotnet.c5fp1b3gj5.js"
     },
     {
       "hash": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
@@ -202,7 +202,7 @@ self.assetsManifest = {
       "url": "favicon.png"
     },
     {
-      "hash": "sha256-USYoo3F6drNkxm+ltKR9DOR/0JVEfyXIiUjnYwY3oa8=",
+      "hash": "sha256-qH8JpOAQY4nuzwXBKjpgCg3PcGimDyZ1qlHSvlQeRAo=",
       "url": "fonts/Cardo-Regular-Nikud.ttf"
     },
     {
@@ -210,7 +210,7 @@ self.assetsManifest = {
       "url": "fonts/Cardo-Regular.ttf"
     },
     {
-      "hash": "sha256-ljy7yx0liUbRQFOnzM4U+NibApFv7Q8MqhdVWvoy7fw=",
+      "hash": "sha256-U7lALtftlh9TM4CU5/HlS5vrX8DRhMPhRIpsOYKzALE=",
       "url": "fonts/DavidLibre-Bold-Nikud.ttf"
     },
     {
@@ -218,7 +218,7 @@ self.assetsManifest = {
       "url": "fonts/DavidLibre-Bold.ttf"
     },
     {
-      "hash": "sha256-ZO57DxwwcIXu0FsjEZMlO8vCV/PXaEERibjx5ntDmLg=",
+      "hash": "sha256-pk3gFQNjEyK3BRIIUS1WTUYp+UOoFWpJiGiwkvSTdFM=",
       "url": "fonts/DavidLibre-Medium-Nikud.ttf"
     },
     {
@@ -226,7 +226,7 @@ self.assetsManifest = {
       "url": "fonts/DavidLibre-Medium.ttf"
     },
     {
-      "hash": "sha256-1KAjqXIKis88k00HSfI2co7xED24VQIN+g8fJGzp7l8=",
+      "hash": "sha256-PfYJK4Y0oF9JNM7QETtmm/u5lYo8N6Zh1zlpO4n4eWg=",
       "url": "fonts/DavidLibre-Regular-Nikud.ttf"
     },
     {
@@ -234,7 +234,7 @@ self.assetsManifest = {
       "url": "fonts/DavidLibre-Regular.ttf"
     },
     {
-      "hash": "sha256-88FzRSugR9fMJQV0p38yrIouF0ofRBKZ32YvDguLnUU=",
+      "hash": "sha256-MefW/v5xyXkoXZeJ86ROeyBRxoKqijWS8RS9hzYcKus=",
       "url": "fonts/FrankRuhlLibre-Nikud.ttf"
     },
     {
@@ -242,7 +242,7 @@ self.assetsManifest = {
       "url": "fonts/FrankRuhlLibre.ttf"
     },
     {
-      "hash": "sha256-8sIeeBjzr/RbSujfA0HuudPrjnIKcAWzR1yQyHKjadg=",
+      "hash": "sha256-oB8s/gDH9F/RqSNwZ9AKZkgOGD21pFeFqOGXxWBBANQ=",
       "url": "fonts/NotoRashiHebrew-Nikud.ttf"
     },
     {
@@ -250,7 +250,7 @@ self.assetsManifest = {
       "url": "fonts/NotoRashiHebrew-Variable.ttf"
     },
     {
-      "hash": "sha256-QaC+gy0f1xvzD8Cf80X+Q4cplY30julDv9ChqAvGHlk=",
+      "hash": "sha256-kajKgc8VAHhiQKFYaeCBgripERpJCoYZ2Z6vkhgUzug=",
       "url": "fonts/NotoSansHebrew-Nikud.ttf"
     },
     {
@@ -258,7 +258,7 @@ self.assetsManifest = {
       "url": "fonts/NotoSansHebrew.ttf"
     },
     {
-      "hash": "sha256-uo/4XCWsAb93KMhLfGNFnIWtGkpswmGNldltJdAuN9M=",
+      "hash": "sha256-EADuK7RWNLdDdGPvY/LWQOfgW7ijwCrn902DA1KfHKQ=",
       "url": "fonts/NotoSerifHebrew-Nikud.ttf"
     },
     {
@@ -270,7 +270,7 @@ self.assetsManifest = {
       "url": "fonts/OFL.txt"
     },
     {
-      "hash": "sha256-cXpxOeop8Nui+Sf8f1iLWsc+zZ/7zQdIEG0IYkmjISo=",
+      "hash": "sha256-aTlbUIHIdiOpgBqi6pM1vFhWZdCbmG8NjCFS/dH9usI=",
       "url": "fonts/ShevaNaFallback-Nikud.ttf"
     },
     {
@@ -278,7 +278,7 @@ self.assetsManifest = {
       "url": "fonts/ShevaNaFallback.ttf"
     },
     {
-      "hash": "sha256-xotPHKmw0p8wEa0/pZt1/v2jdFG7uiYc8nQFX+eiU38=",
+      "hash": "sha256-cnu0dFJ8RML69aQ4BnXOeqDzgikvk++h5ofl48GqUhY=",
       "url": "fonts/TaameyFrankCLM-Bold-Nikud.ttf"
     },
     {
@@ -286,7 +286,7 @@ self.assetsManifest = {
       "url": "fonts/TaameyFrankCLM-Bold.ttf"
     },
     {
-      "hash": "sha256-wRwBBZoVHUMTfh4qt1dAnFbumxe9SHJbXQ2XEXLHPfo=",
+      "hash": "sha256-Jy8UgY1CtznDUNPo9ZZIGRYHpMPNLOJ2CAGKTaRc5Fw=",
       "url": "fonts/TaameyFrankCLM-Medium-Nikud.ttf"
     },
     {
@@ -334,7 +334,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-QVyhMb9yQNKTiIh7zjWs2u1OE3i4OiP0/CVQw14eYBU=",
+      "hash": "sha256-vhN6orK+RpCzWhSpnq4Es+9SiQie0oxB3h6r+DkvIxw=",
       "url": "index.html"
     },
     {
