@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "lG65vUbR",
+  "version": "3d3DhlDa",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -230,7 +230,7 @@ self.assetsManifest = {
       "url": "fonts/OFL.txt"
     },
     {
-      "hash": "sha256-CLqKcNujwTlakO9ALughB5lecRFLlwPz0YF7kWp+YIA=",
+      "hash": "sha256-GBU+P1fPPGYu/2y8rGDoY4HBGahRbEGu9W/Vh9diYj0=",
       "url": "fonts/ShevaNaFallback.ttf"
     },
     {
