@@ -1,5 +1,13 @@
 :root { color-scheme:light; font-family:Arial,"Segoe UI",sans-serif; color:#1e293b; background:#f8fafc; font-synthesis:none; }
 @font-face { font-family:"Noto Serif Hebrew"; src:url("../fonts/NotoSerifHebrew.ttf") format("truetype"); font-weight:100 900; font-display:swap; }
+@font-face { font-family:"Noto Sans Hebrew"; src:url("../fonts/NotoSansHebrew.ttf") format("truetype"); font-weight:100 900; font-stretch:75% 125%; font-display:swap; }
+@font-face { font-family:"Frank Ruhl Libre"; src:url("../fonts/FrankRuhlLibre.ttf") format("truetype"); font-weight:100 900; font-display:swap; }
+@font-face { font-family:"David Libre"; src:url("../fonts/DavidLibre-Regular.ttf") format("truetype"); font-weight:400; font-display:swap; }
+@font-face { font-family:"David Libre"; src:url("../fonts/DavidLibre-Medium.ttf") format("truetype"); font-weight:500; font-display:swap; }
+@font-face { font-family:"David Libre"; src:url("../fonts/DavidLibre-Bold.ttf") format("truetype"); font-weight:700; font-display:swap; }
+@font-face { font-family:"Taamey Frank CLM"; src:url("../fonts/TaameyFrankCLM-Medium.ttf") format("truetype"); font-weight:400; font-display:swap; }
+@font-face { font-family:"Taamey Frank CLM"; src:url("../fonts/TaameyFrankCLM-Bold.ttf") format("truetype"); font-weight:700; font-display:swap; }
+@font-face { font-family:"Hebrew Sheva Fallback"; src:url("../fonts/ShevaNaFallback.ttf") format("truetype"); font-weight:100 900; font-display:swap; unicode-range:U+05C8; }
 * { box-sizing:border-box; }
 body { margin:0; }
 a { color:#2563eb; text-decoration:none; }
@@ -75,12 +83,17 @@ h1,h2,p { margin:0; }
 .reader-controls { display:flex; gap:3px; align-items:center; overflow-x:auto; }
 .reader-controls button { flex-shrink:0; }
 .reader-controls button { font-size:12px; }
+.reader-controls select { flex:0 0 160px; max-width:48vw; min-width:0; min-height:34px; padding:3px 5px; border:1px solid #cbd5e1; background:white; color:#334155; font-size:12px; }
 .load-label { margin-inline-start:auto; color:#64748b; font-size:11px; }
 .passages { padding:0; }
 .passage { border:0; padding:0; margin:0; overflow-wrap:anywhere; }
 .reader-text { white-space:pre-wrap; line-height:inherit; }
 .original-text { padding:0; font-size:var(--reader-size,20px); line-height:1.35; }
-.reader[data-reader="torah"] .original-text { font-family:"Noto Serif Hebrew",serif; line-height:1.8; }
+.reader[data-reader="torah"] .original-text { font-family:"Noto Serif Hebrew","Hebrew Sheva Fallback",serif; line-height:1.8; }
+.reader[data-reader="torah"][data-text-font="noto-sans"] .original-text { font-family:"Noto Sans Hebrew","Hebrew Sheva Fallback",sans-serif; }
+.reader[data-reader="torah"][data-text-font="frank-ruhl"] .original-text { font-family:"Frank Ruhl Libre","Hebrew Sheva Fallback",serif; }
+.reader[data-reader="torah"][data-text-font="david-libre"] .original-text { font-family:"David Libre","Hebrew Sheva Fallback",serif; }
+.reader[data-reader="torah"][data-text-font="taamey-frank"] .original-text { font-family:"Taamey Frank CLM","Hebrew Sheva Fallback",serif; }
 .verse-number { margin-inline-end:.45em; font-family:Arial,sans-serif; font-size:.65em; }
 .nikud-sheva-na { color:#1d4ed8; font-weight:650; text-decoration:underline dotted; text-underline-offset:.24em; }
 .nikud-sheva-nach { color:#596579; }

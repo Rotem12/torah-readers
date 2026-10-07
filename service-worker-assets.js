@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "G/JnTSvp",
+  "version": "lG65vUbR",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -150,20 +150,20 @@ self.assetsManifest = {
       "url": "_framework/System.Threading.8ak7qnz1xz.wasm"
     },
     {
-      "hash": "sha256-Bpc0bT4pOUT5Q09+dX8s0tAUA78qZpsmV5RwsAAOH78=",
-      "url": "_framework/TorahReaders.Core.asggch0l85.wasm"
+      "hash": "sha256-kdfaTSVT2KEoN+LF6InhyjR0RkaYpKhsVBcDJCEIIaI=",
+      "url": "_framework/TorahReaders.Core.dtzl7yctgb.wasm"
     },
     {
-      "hash": "sha256-IacVOu18olOmVTowWnQKxD8JuTJnkq2+ENBC71PI3Yo=",
-      "url": "_framework/TorahReaders.Web.f4kco01t2r.wasm"
+      "hash": "sha256-ARTGnlU2lJmV8HCSCOuzd8bV6xn3InX1eRUi83VBYhg=",
+      "url": "_framework/TorahReaders.Web.vgm96b0pkv.wasm"
     },
     {
       "hash": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
     },
     {
-      "hash": "sha256-EygPNDitdY5PKLQsrNrFGlajWIt3IZ9hii9ObIh9QVw=",
-      "url": "_framework/dotnet.3k0pl1wyig.js"
+      "hash": "sha256-2EXmXUo1WpJeqme1IWw1o7MS9WALGD8H9yDgLjP5L5E=",
+      "url": "_framework/dotnet.0uqcj4bwu0.js"
     },
     {
       "hash": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
@@ -194,12 +194,32 @@ self.assetsManifest = {
       "url": "book.svg"
     },
     {
-      "hash": "sha256-5WQgYNqEQuw2m1NQRIdfElsG2DsbupVd9moW9jLcqAo=",
+      "hash": "sha256-DXnvwNGQ+nCmHIVUXWhSsUPE5c9L5kOinakXA7yq/nc=",
       "url": "css/app.css"
     },
     {
       "hash": "sha256-iS2iCB61fcq5S4dmcJR+pzOTiTdWitSSUTfhVxTfByA=",
       "url": "favicon.png"
+    },
+    {
+      "hash": "sha256-dhCBnHiIyOfs38VzCJET7FNVz5UHhhSuDjC1CbBUaPg=",
+      "url": "fonts/DavidLibre-Bold.ttf"
+    },
+    {
+      "hash": "sha256-+j41GXRydoUgpIm3cAm3W/xVYB9hoMTQwbI8p/h3Ac4=",
+      "url": "fonts/DavidLibre-Medium.ttf"
+    },
+    {
+      "hash": "sha256-kj8G4PbchOFknYzF1eEqjWY632q6g7oVuqXVWftHuG4=",
+      "url": "fonts/DavidLibre-Regular.ttf"
+    },
+    {
+      "hash": "sha256-+b8mlmaBA3quiUsDG9Dc8sG/36Eo3QZAzydv5iozikM=",
+      "url": "fonts/FrankRuhlLibre.ttf"
+    },
+    {
+      "hash": "sha256-fvNqLDWTdYzbYi4b3vT4RSPpL7w8zGZ0ON2A/1TC3og=",
+      "url": "fonts/NotoSansHebrew.ttf"
     },
     {
       "hash": "sha256-k8rvkhNgeI3DsOMhNrsm8WvFdxfsSC1I/H/UOCBhcWU=",
@@ -210,6 +230,42 @@ self.assetsManifest = {
       "url": "fonts/OFL.txt"
     },
     {
+      "hash": "sha256-CLqKcNujwTlakO9ALughB5lecRFLlwPz0YF7kWp+YIA=",
+      "url": "fonts/ShevaNaFallback.ttf"
+    },
+    {
+      "hash": "sha256-6QUGaTRSqdS1+fRDwJ19MJjIgzDxtzydbPo478f35BU=",
+      "url": "fonts/TaameyFrankCLM-Bold.ttf"
+    },
+    {
+      "hash": "sha256-9VjTVk04WmpRLOk4cF9HI25xRX6KpK2er2zrw+F7mRw=",
+      "url": "fonts/TaameyFrankCLM-Medium.ttf"
+    },
+    {
+      "hash": "sha256-AfIntJTDSMqNrursux4ImIsiJnPKS9rRaB5JukzIpZI=",
+      "url": "fonts/licenses/DavidLibre-OFL.txt"
+    },
+    {
+      "hash": "sha256-TpcgslRNlGc359/gAnpiwjxyR/AUTwi8Q3zcwuan2Cg=",
+      "url": "fonts/licenses/FrankRuhlLibre-OFL.txt"
+    },
+    {
+      "hash": "sha256-uuO+/54V8aaAwnZMS72yW5lbm/U5rq+EZ0gqSVx1rQw=",
+      "url": "fonts/licenses/JuliaMono-OFL.txt"
+    },
+    {
+      "hash": "sha256-m5/gKLW6dNIxZZobuvDtCbEedZ0cpqBwmZ4W0VFha0c=",
+      "url": "fonts/licenses/NotoSansHebrew-OFL.txt"
+    },
+    {
+      "hash": "sha256-oTJzh/Z6BC5qzBkEp/14zc0itjCrLSfkQmzAKZaLTpM=",
+      "url": "fonts/licenses/TaameyFrankCLM-LICENSE.txt"
+    },
+    {
+      "hash": "sha256-8M4Pn+VuENzQXy6ufPK6fVn1lL9d9awD3stEETU2BwM=",
+      "url": "fonts/licenses/TaameyFrankCLM-README.txt"
+    },
+    {
       "hash": "sha256-QSoo20UkcBubMQnS6HChiiu6TOyqeUquxdLOnKNoBC8=",
       "url": "icon-192.png"
     },
@@ -218,7 +274,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-7pv+5/vq3H599DlDagSiPAfIhQeXaU12UUOfoA/aeRA=",
+      "hash": "sha256-1/2oXTAeMmWctVM9VZ6xPs/Zj8Rq8ceTzTVcfViz5l0=",
       "url": "index.html"
     },
     {
@@ -230,7 +286,7 @@ self.assetsManifest = {
       "url": "nikud.mjs"
     },
     {
-      "hash": "sha256-3fdi0b0TXxziHIR5rCxwmWTn2whnInJOzSrtUXblk/I=",
+      "hash": "sha256-XDsWW/SpE84d7J7pZYs/OQ0NvJVUp9qN0B/rrOUO1TA=",
       "url": "reader-browser.js"
     },
     {

@@ -41,6 +41,16 @@
   }, {passive:true});
   window.addEventListener("pagehide", saveViewport);
   document.addEventListener("visibilitychange", () => { if (document.hidden) saveViewport(); });
+  document.addEventListener("copy", event => {
+    const selection = document.getSelection();
+    const anchor = selection?.anchorNode;
+    const element = anchor?.nodeType === Node.ELEMENT_NODE ? anchor : anchor?.parentElement;
+    if (!element?.closest?.('.reader[data-reader="torah"]')) return;
+    const text = selection?.toString() ?? "";
+    if (!text.includes("\u05C8") || !event.clipboardData) return;
+    event.clipboardData.setData("text/plain", text.replace(/\u05C8/gu, "\u05B0"));
+    event.preventDefault();
+  });
   window.readerBrowser = {
     readBookmarks(reader, backup) {
       return localStorage.getItem('torah-reader-bookmarks-v1|' + reader + (backup ? '|backup' : ''));
@@ -56,7 +66,7 @@
     visibleText() {
       return [...document.querySelectorAll('.passage[data-reference]')].map(row => ({
         key:row.dataset.key, reference:row.dataset.reference, start:Number(row.dataset.start),
-        text:[...row.querySelectorAll('.reader-text,.translation')].map(text => text.textContent).join('\n')
+        text:[...row.querySelectorAll('.reader-text,.translation')].map(text => text.textContent.replace(/\u05C8/gu, "\u05B0")).join('\n')
       }));
     },
     blurSearch() { document.querySelector('.reader-search input')?.blur(); },
