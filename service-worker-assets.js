@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "3d3DhlDa",
+  "version": "ZNyvL1+M",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -194,7 +194,7 @@ self.assetsManifest = {
       "url": "book.svg"
     },
     {
-      "hash": "sha256-DXnvwNGQ+nCmHIVUXWhSsUPE5c9L5kOinakXA7yq/nc=",
+      "hash": "sha256-4CRIUuXiBP0yfJ0ZlPW2veTS0aomKCk5gQxDtRPS/hA=",
       "url": "css/app.css"
     },
     {
