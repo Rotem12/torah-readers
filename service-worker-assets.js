@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "jrM7b9CR",
+  "version": "7LVtmjRQ",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -90,8 +90,8 @@ self.assetsManifest = {
       "url": "_framework/System.IO.Pipelines.px0vglstfo.wasm"
     },
     {
-      "hash": "sha256-dpdyha0byapx8dudWgaNSgor+nZTw7rvSKxtI3Kg/a8=",
-      "url": "_framework/System.Linq.u6kdo6oayy.wasm"
+      "hash": "sha256-GAf7J67irW/Zk6LnWv+/fV1czzf4LaMRDBm0DRqC9Hs=",
+      "url": "_framework/System.Linq.c3vu4rz4t5.wasm"
     },
     {
       "hash": "sha256-m0n7rRLsNRQhBinfK5Uxk3QHKSyUTL0ve+kF8ICrN5c=",
@@ -114,20 +114,20 @@ self.assetsManifest = {
       "url": "_framework/System.ObjectModel.aj4d5ys7y6.wasm"
     },
     {
-      "hash": "sha256-7ig4HmIrAswvBqVO4GGSEA3dnvKZKzSCXFbNKxKEvVE=",
-      "url": "_framework/System.Private.CoreLib.ektpv2c1z0.wasm"
+      "hash": "sha256-GzasDU6fdvSPL1s3YHpX61+wmjG8Ds4CGaHvdpjOum0=",
+      "url": "_framework/System.Private.CoreLib.pjmv6oi8j0.wasm"
     },
     {
       "hash": "sha256-9ZMHn7Toz62wlLZPqashUwd0SGov/s5I+0wWXAxacUY=",
       "url": "_framework/System.Private.Uri.bk34xc5z6l.wasm"
     },
     {
-      "hash": "sha256-subN4GeRX41RGMetqHoww+/Yr+o/uCpaS9oTrMeKJr0=",
-      "url": "_framework/System.Runtime.InteropServices.JavaScript.ae3uao1vst.wasm"
+      "hash": "sha256-2eoaL+/vGjAstq3asm4Ladm/qZVo8V9WUhxTS7DcieQ=",
+      "url": "_framework/System.Runtime.1y9epu1na8.wasm"
     },
     {
-      "hash": "sha256-HrnqBwZvuZe2+4zgQtVPw2JRuIHKkbPu+GRhUiQ1lyQ=",
-      "url": "_framework/System.Runtime.edg86ngjhk.wasm"
+      "hash": "sha256-subN4GeRX41RGMetqHoww+/Yr+o/uCpaS9oTrMeKJr0=",
+      "url": "_framework/System.Runtime.InteropServices.JavaScript.ae3uao1vst.wasm"
     },
     {
       "hash": "sha256-cTpFIxaNUWLXKQa2yGmNxTQNwgdyj7W4RAOSXRdsk50=",
@@ -138,8 +138,8 @@ self.assetsManifest = {
       "url": "_framework/System.Text.Encodings.Web.poz8e5l19c.wasm"
     },
     {
-      "hash": "sha256-Pa0+LBaUqyjIIZw2rSqQTb47OVrYsE28Pt4LPIF51+U=",
-      "url": "_framework/System.Text.Json.jg74w5o2r9.wasm"
+      "hash": "sha256-jiPFyTlsFEjFqLQ160dCCN82Q5zF5N5ZXWiDlTzIXLc=",
+      "url": "_framework/System.Text.Json.m3r9boyiie.wasm"
     },
     {
       "hash": "sha256-hCnWXNOlA+vsErdXGZ47NjAuLVufQx9Ums3P6h3r17M=",
@@ -150,20 +150,20 @@ self.assetsManifest = {
       "url": "_framework/System.Threading.8ak7qnz1xz.wasm"
     },
     {
-      "hash": "sha256-MrnN9YEvwzL4LPUJWcZoxFTz7JdQVaGuhKen6GebGA8=",
-      "url": "_framework/TorahReaders.Core.ivarfi2fvn.wasm"
+      "hash": "sha256-F/lpRk+f2ylaWWrU2C4XrAIO/3J6I6ThAFqVdM1sFl4=",
+      "url": "_framework/TorahReaders.Core.rrfhrla231.wasm"
     },
     {
-      "hash": "sha256-jc2JAqD9x0MHukFo0+Wnp37tRWuHa6u+n+fsj4qzPTM=",
-      "url": "_framework/TorahReaders.Web.plcbd3yail.wasm"
+      "hash": "sha256-3FQz7xb01TbMCb29u5CtV3/x8S4pdGtP07qMsL5/5TE=",
+      "url": "_framework/TorahReaders.Web.kwt7g6j03j.wasm"
     },
     {
       "hash": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
     },
     {
-      "hash": "sha256-N8IOoLe4ZoFMN0Da3ntYJ/Bnp9e9HN+GZ5Ez/q8fHXM=",
-      "url": "_framework/dotnet.bjgiql91ex.js"
+      "hash": "sha256-lhAHBzoZaa56B+EQtutqW53ZCWDCF/4gua5MOigc4wU=",
+      "url": "_framework/dotnet.arg7st1e5x.js"
     },
     {
       "hash": "sha256-jZddobLBM2C3lQhYQ61xSQJ/WqD3eQCO3RzoHGaOjx0=",
@@ -194,7 +194,7 @@ self.assetsManifest = {
       "url": "book.svg"
     },
     {
-      "hash": "sha256-ItLisiQrXtDcLdRLVypEQ64GFiAwEPfjnJykJFn1weA=",
+      "hash": "sha256-1xrZZP+Gtj/D7CpbInPMIfovpp0v5XbdYNg30STwVN8=",
       "url": "css/app.css"
     },
     {
@@ -210,15 +210,15 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-coDYcSCRxyB1GbDdup/EwYg6dXoK7COCI5YKwLjbGGo=",
+      "hash": "sha256-TPDDzD2PMlKqXRT0UnPeKD/s3NpVHApGW5u7qwZLGVc=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-jrrhrbfG9eHJN4F3vuPtIGW0hepNG0J8X/5H+jfFTJI=",
+      "hash": "sha256-wQ9qLJw9xSL2e1N2sMSUh4vTABR+4dboX2Ztk7F3Hvw=",
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-6CmDlgTGhQo+PjGgBdV/ltU4idcneG5IxuBY06AnXUU=",
+      "hash": "sha256-Uz7+GTGUOWaO6AYi0keJ6YdiUSLQ2OtMKovKQh2o2nQ=",
       "url": "reader-browser.js"
     }
   ]
