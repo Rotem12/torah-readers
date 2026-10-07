@@ -116,6 +116,10 @@
         });
       } catch { return false; }
     },
+    async nikudMarks(text) {
+      const nikud = await import("./nikud.mjs");
+      return nikud.marks(text);
+    },
     async copy(text) {
       try { await navigator.clipboard.writeText(text); return true; } catch { return false; }
     }
