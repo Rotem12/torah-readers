@@ -66,7 +66,7 @@
     visibleText() {
       return [...document.querySelectorAll('.passage[data-reference]')].map(row => ({
         key:row.dataset.key, reference:row.dataset.reference, start:Number(row.dataset.start),
-        text:[...row.querySelectorAll('.reader-text,.translation')].map(text => text.textContent.replace(/\u05C8/gu, "\u05B0")).join('\n')
+        text:[...row.querySelectorAll('.reader-text,.translation')].filter(text => !text.closest('[hidden]')).map(text => text.textContent.replace(/\u05C8/gu, "\u05B0")).join('\n')
       }));
     },
     blurSearch() { document.querySelector('.reader-search input')?.blur(); },
