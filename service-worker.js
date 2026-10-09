@@ -1,4 +1,4 @@
-/* Manifest version: a9CZSVBq */
+/* Manifest version: UOUrp6Rx */
 self.importScripts('./service-worker-assets.js');
 
 // Each project site owns only its own application files on github.io.
@@ -8,6 +8,7 @@ const cacheName = cachePrefix + self.assetsManifest.version;
 // .nojekyll configures Pages, but Pages does not serve that dotfile. A 404
 // would reject the entire cache installation, including the offline shell.
 const assets = self.assetsManifest.assets.filter(asset =>
+    asset.url !== 'study-config.json' &&
     asset.url !== '.nojekyll' &&
     !/^service-worker(?:\.published)?\.js$/.test(asset.url) && !/\.pdb$/.test(asset.url));
 const assetUrls = new Set(assets.map(asset => new URL(asset.url, baseUrl).href));
@@ -29,6 +30,7 @@ self.addEventListener('activate', event => event.waitUntil((async () => {
 self.addEventListener('fetch', event => {
     const url = new URL(event.request.url);
     if (event.request.method !== 'GET' || url.origin !== baseUrl.origin || !url.pathname.startsWith(baseUrl.pathname)) return;
+    if (url.pathname === new URL('study-config.json', baseUrl).pathname) return;
     event.respondWith((async () => {
         const cache = await caches.open(cacheName);
         const request = event.request.mode === 'navigate' && !assetUrls.has(url.href)
