@@ -1,0 +1,24 @@
+.study-share-button { display:inline-flex; flex:0 0 34px; align-items:center; justify-content:center; width:34px; height:34px; min-height:34px; padding:0; color:var(--reader-accent); background:var(--reader-tint); border-color:color-mix(in srgb,var(--reader-accent) 28%,#cbd5e1); }
+.study-share-button svg { width:18px; height:18px; }
+.study-strip { position:sticky; top:0; z-index:35; margin:0 auto; max-width:1100px; padding:10px 14px; background:#f0fdfa; border-bottom:2px solid #99f6e4; font-family:system-ui,sans-serif; font-size:13px; }
+.study-strip-main,.study-tools,.study-management { display:flex; align-items:center; flex-wrap:wrap; gap:7px; }
+.study-strip-main>strong { color:#115e59; }
+.study-strip button,.study-strip select { font-size:12px; min-height:36px; }
+.study-tools { margin-top:6px; }
+body:has(.study-strip) .reader-toolbar { top:var(--study-strip-height,110px); z-index:30; }
+.study-status,.study-error { margin:7px 0; line-height:1.6; }
+.study-error { color:#9f1239; }
+.study-field { display:flex; flex-direction:column; gap:5px; margin:12px 0; width:100%; }
+.study-field input,.study-field select { width:100%; min-height:42px; }
+.study-management p { width:100%; }
+.study-details { max-height:260px; overflow:auto; }
+.study-members,.study-annotations { padding:0; list-style:none; }
+.study-members li,.study-annotations li { display:flex; align-items:center; gap:7px; flex-wrap:wrap; padding:5px 0; }
+.study-dot { display:inline-block; width:10px; height:10px; border-radius:50%; background:#3b82f6; }
+.study-dot.amber { background:#f59e0b; }.study-dot.green { background:#22c55e; }.study-dot.rose { background:#f43f5e; }.study-dot.purple { background:#a855f7; }
+.study-overlay { position:absolute; top:0; left:0; width:0; height:0; pointer-events:none; z-index:20; }
+.study-highlight,.study-beacon { position:absolute; pointer-events:none; border-radius:3px; }
+.study-highlight { background:var(--study-color); opacity:.23; mix-blend-mode:multiply; }
+.study-beacon { outline:2px solid var(--study-color); background:color-mix(in srgb,var(--study-color) 12%,transparent); }
+.study-beacon-name { position:absolute; top:-22px; right:0; font:12px system-ui; color:white; background:var(--study-color); border-radius:4px; padding:2px 5px; white-space:nowrap; }
+@media(max-width:650px) { .study-strip { font-size:12px; padding:7px; }.study-strip-main { gap:4px; }.study-tools { gap:4px; }.study-modal { padding:8px; } }
