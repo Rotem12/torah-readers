@@ -5,6 +5,12 @@
   const maxRecordBytes = 4 * 1024 * 1024;
   const maxTotalBytes = 32 * 1024 * 1024;
   let dbPromise, currentSpot = null, scrollTimer, restoring = false;
+  const studyDialogFocus = new WeakMap();
+  function focusableWithin(root) {
+    return [...root.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])')]
+      .filter(element => !element.hidden && element.getAttribute('aria-hidden') !== 'true' &&
+        getComputedStyle(element).visibility !== 'hidden' && element.getClientRects().length > 0);
+  }
   function openDb() {
     if (!dbPromise) dbPromise = new Promise(resolve => {
       if (!window.indexedDB) { resolve(null); return; }
@@ -132,6 +138,35 @@
     },
     async copy(text) {
       try { await navigator.clipboard.writeText(text); return true; } catch { return false; }
+    },
+    activateStudyDialog(dialog) {
+      if (!dialog || studyDialogFocus.has(dialog)) return;
+      const previous = document.activeElement;
+      const onKeyDown = event => {
+        if (event.key !== 'Tab') return;
+        const items = focusableWithin(dialog);
+        if (items.length === 0) { event.preventDefault(); dialog.focus(); return; }
+        const first = items[0], last = items[items.length - 1], active = document.activeElement;
+        if (event.shiftKey && (active === first || !dialog.contains(active))) {
+          event.preventDefault(); last.focus();
+        } else if (!event.shiftKey && (active === last || !dialog.contains(active))) {
+          event.preventDefault(); first.focus();
+        }
+      };
+      dialog.addEventListener('keydown', onKeyDown);
+      studyDialogFocus.set(dialog, { previous, onKeyDown });
+      (dialog.querySelector('.dialog-close') || focusableWithin(dialog)[0] || dialog).focus({ preventScroll: true });
+    },
+    maintainStudyDialogFocus(dialog) {
+      if (!dialog || !studyDialogFocus.has(dialog) || dialog.contains(document.activeElement)) return;
+      (dialog.querySelector('.dialog-close') || focusableWithin(dialog)[0] || dialog).focus({ preventScroll: true });
+    },
+    deactivateStudyDialog(dialog) {
+      const state = dialog && studyDialogFocus.get(dialog);
+      if (!state) return;
+      dialog.removeEventListener('keydown', state.onKeyDown);
+      studyDialogFocus.delete(dialog);
+      if (state.previous?.isConnected) state.previous.focus({ preventScroll: true });
     }
   };
 })();

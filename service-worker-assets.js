@@ -1,21 +1,21 @@
 self.assetsManifest = {
-  "version": "UOUrp6Rx",
+  "version": "qjAXBiUM",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
       "url": ".nojekyll"
     },
     {
-      "hash": "sha256-LzuyfCqmuZrjrA1a4NaaqxbFja8si6eQ0RpfbZofaAI=",
-      "url": "_framework/Microsoft.AspNetCore.Components.Web.105inx8v2w.wasm"
+      "hash": "sha256-pAqrMWXhc2QjcUoU9ePgGadA6aoVwSxwjTRYyvDEJMs=",
+      "url": "_framework/Microsoft.AspNetCore.Components.4cn6zf7hye.wasm"
+    },
+    {
+      "hash": "sha256-OXTDySiRY2C56apDfrpUFysPje39hbqA+fRID68F+4E=",
+      "url": "_framework/Microsoft.AspNetCore.Components.Web.jtim3g6gbz.wasm"
     },
     {
       "hash": "sha256-k9HV/Po3Ge7/Bnk1xtG/yrXhap2htcHgda3k7LaP0mY=",
       "url": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dw23t4by8t.wasm"
-    },
-    {
-      "hash": "sha256-i4YTNPQFDlQ7Xe26+pj2ZzQ2+VAwgO0kfZos4ZM7wVA=",
-      "url": "_framework/Microsoft.AspNetCore.Components.f3pq5o4v7l.wasm"
     },
     {
       "hash": "sha256-oDcpyYbqdkq6hP6NijTRWyXx2c2DKL6qilKSIzNmK3I=",
@@ -90,8 +90,8 @@ self.assetsManifest = {
       "url": "_framework/System.IO.Pipelines.px0vglstfo.wasm"
     },
     {
-      "hash": "sha256-Ec1zCpjlwPXoL0tlXbxJBSdXz/yE6kUQu1JEFDnHsR4=",
-      "url": "_framework/System.Linq.b9qg6l9mmw.wasm"
+      "hash": "sha256-vGS8P0nK9M1ACFrp6w13ecnbFpHKcwCt27swGOflUZk=",
+      "url": "_framework/System.Linq.sw202527e1.wasm"
     },
     {
       "hash": "sha256-m0n7rRLsNRQhBinfK5Uxk3QHKSyUTL0ve+kF8ICrN5c=",
@@ -114,8 +114,8 @@ self.assetsManifest = {
       "url": "_framework/System.ObjectModel.aj4d5ys7y6.wasm"
     },
     {
-      "hash": "sha256-XbCS1gC7I6uh3R18LydqfGfmZJMi/Q40ythgOjKzCoU=",
-      "url": "_framework/System.Private.CoreLib.fppuquu0u3.wasm"
+      "hash": "sha256-7jX0wlhNQf5BdUpOb7k3gBUMAFz2RWRXk3mPEBu/J58=",
+      "url": "_framework/System.Private.CoreLib.izfghk4vub.wasm"
     },
     {
       "hash": "sha256-9ZMHn7Toz62wlLZPqashUwd0SGov/s5I+0wWXAxacUY=",
@@ -138,8 +138,8 @@ self.assetsManifest = {
       "url": "_framework/System.Text.Encodings.Web.poz8e5l19c.wasm"
     },
     {
-      "hash": "sha256-W5Hby9MH9zg0x9W6L1E09XsBLXKOdqVtuQ4gyHtwF/k=",
-      "url": "_framework/System.Text.Json.vvyj6pdvky.wasm"
+      "hash": "sha256-TDUNeRPPkAaSbQuA9j/viRW3VHtKuVusS9yMhHKR2MQ=",
+      "url": "_framework/System.Text.Json.8zkqalaarg.wasm"
     },
     {
       "hash": "sha256-juczTXHqaZE8ZONMSuTGMsZe3v4BeRTUyXBH5un1+eQ=",
@@ -150,12 +150,12 @@ self.assetsManifest = {
       "url": "_framework/System.Threading.8ak7qnz1xz.wasm"
     },
     {
-      "hash": "sha256-0gI0IS9H6gKh+SgViq8ZO4B4MQALPjfDNn8pY8hrVPE=",
-      "url": "_framework/TorahReaders.Core.e8st5dl8ek.wasm"
+      "hash": "sha256-DdaMXEzAMMTC8Q9bTi1fk5lzBRx2WYBXL0BaPxNi9CI=",
+      "url": "_framework/TorahReaders.Core.r6oah8cs3j.wasm"
     },
     {
-      "hash": "sha256-ZnoO5wsRLUCiBTojW0ZpznCro4m14McFLWZJIrM6sIc=",
-      "url": "_framework/TorahReaders.Web.m1itx9g0at.wasm"
+      "hash": "sha256-a229KOJOaUHeSsXo6yfYvU1gEbb/3cCuJq6UqNb/Bv0=",
+      "url": "_framework/TorahReaders.Web.9fn4ftwd33.wasm"
     },
     {
       "hash": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
@@ -174,8 +174,8 @@ self.assetsManifest = {
       "url": "_framework/dotnet.runtime.v06hirbjsv.js"
     },
     {
-      "hash": "sha256-qX8tszhX3i5q9dIcntrA0YLJ0dcj6ZfIl6xk8U16doA=",
-      "url": "_framework/dotnet.tzm19zs6m0.js"
+      "hash": "sha256-bflvAEWN64OKdG9mA6tevpO1BnmKDniwz6PpXigMSqM=",
+      "url": "_framework/dotnet.ruo3mwx001.js"
     },
     {
       "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -194,7 +194,7 @@ self.assetsManifest = {
       "url": "book.svg"
     },
     {
-      "hash": "sha256-w8R3VFIvghPKQAt5m8iNV1lfg0YsWBUzDQdsxsdXIgc=",
+      "hash": "sha256-ZEK6mXfIXB6q8Avl6SVC6rD/MnERgdzzj2j/uOkcLX0=",
       "url": "css/app.css"
     },
     {
@@ -338,7 +338,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-dD9ap4l9tI4IS2DI4l4u2L3x3UycclJwCxbA+Iuuc5U=",
+      "hash": "sha256-EioeLslRT+BtDAXATMxW5ra3CH5DopByi8xtqxa8qCk=",
       "url": "index.html"
     },
     {
@@ -350,7 +350,7 @@ self.assetsManifest = {
       "url": "nikud.mjs"
     },
     {
-      "hash": "sha256-jsQSzsMKYyyMiM62CkMIGfl9B9wwAICXrAdmv2pgs3E=",
+      "hash": "sha256-N0nmsa7NZ60Od/X2C5NqKqL+OfM8SyWntSovxc8bq58=",
       "url": "reader-browser.js"
     },
     {
