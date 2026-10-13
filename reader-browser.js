@@ -3,7 +3,9 @@
   const prefix = "torah-reader-spot-v1|";
   const ttl = 24 * 60 * 60 * 1000;
   const maxRecordBytes = 4 * 1024 * 1024;
+  const maxTorahPageBytes = 8 * 1024 * 1024;
   const maxTotalBytes = 32 * 1024 * 1024;
+  const compactKinds = new Set(["page", "notes", "source"]);
   let dbPromise, currentSpot = null, scrollTimer, restoring = false;
   const studyDialogFocus = new WeakMap();
   function focusableWithin(root) {
@@ -105,28 +107,41 @@
       try {
         const db = await openDb(); if (!db) return null;
         const entry = await requestValue(db.transaction("entries").objectStore("entries").get(reader + "|" + key));
-        return entry && entry.expires > Date.now() ? entry.json : null;
+        if (!entry || entry.expires <= Date.now()) return null;
+        // Older .NET snapshots escape every Hebrew letter as six ASCII
+        // characters. Normalize in the browser before sending them to WASM.
+        return !entry.compact && compactKinds.has(entry.kind)
+          ? JSON.stringify(JSON.parse(entry.json)) : entry.json;
       } catch { return null; }
     },
     async writeCache(reader, key, json) {
       try {
+        const kind = key.split("|")[0];
+        const compact = compactKinds.has(kind);
+        if (compact) json = JSON.stringify(JSON.parse(json));
         const bytes = new TextEncoder().encode(json).length;
-        if (bytes > maxRecordBytes) return true; // Oversize content remains readable online.
+        const recordLimit = reader === "torah" && kind === "page" ? maxTorahPageBytes : maxRecordBytes;
+        if (bytes > recordLimit) return true; // Oversize content remains readable online.
         const db = await openDb(); if (!db) return false;
-        const all = await requestValue(db.transaction("entries").objectStore("entries").getAll());
-        const id = reader + "|" + key, kind = key.split("|")[0], now = Date.now();
+        const id = reader + "|" + key, now = Date.now();
         const capacity = kind === "page" ? 8 : 12;
-        const alive = all.filter(item => item.id !== id && item.expires > now).sort((a,b) => b.created-a.created);
-        const keep = new Set(); let total = bytes, siblings = 0;
-        for (const entry of alive) {
-          const sibling = entry.reader === reader && entry.kind === kind;
-          if ((sibling && ++siblings >= capacity) || total + entry.bytes > maxTotalBytes) continue;
-          keep.add(entry.id); total += entry.bytes;
-        }
         return await new Promise(resolve => {
+          // Inspect and prune under the same write lock. Concurrent chapter
+          // writes must count each other's entries and preserve the budget.
           const tx = db.transaction("entries", "readwrite"), store = tx.objectStore("entries");
-          for (const entry of all) if (!keep.has(entry.id)) store.delete(entry.id);
-          store.put({id, reader, kind, json, bytes, created:now, expires:now+ttl});
+          const request = store.getAll();
+          request.onsuccess = () => {
+            const all = request.result;
+            const alive = all.filter(item => item.id !== id && item.expires > now).sort((a,b) => b.created-a.created);
+            const keep = new Set(); let total = bytes, siblings = 0;
+            for (const entry of alive) {
+              const sibling = entry.reader === reader && entry.kind === kind;
+              if ((sibling && ++siblings >= capacity) || total + entry.bytes > maxTotalBytes) continue;
+              keep.add(entry.id); total += entry.bytes;
+            }
+            for (const entry of all) if (!keep.has(entry.id)) store.delete(entry.id);
+            store.put({id, reader, kind, json, bytes, compact, created:now, expires:now+ttl});
+          };
           tx.oncomplete = () => resolve(true);
           tx.onerror = tx.onabort = () => resolve(false);
         });
