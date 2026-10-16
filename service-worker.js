@@ -1,4 +1,4 @@
-/* Manifest version: ZDgZvZyE */
+/* Manifest version: kDzkXbXa */
 self.importScripts('./service-worker-assets.js');
 
 // Each project site owns only its own application files on github.io.
@@ -17,10 +17,10 @@ self.addEventListener('install', event => event.waitUntil((async () => {
     const cache = await caches.open(cacheName);
     await cache.addAll(assets.map(asset => new Request(new URL(asset.url, baseUrl),
         { integrity: asset.hash, cache: 'no-cache' })));
-    // Install the complete new shell before replacing an older worker. The
-    // next refresh can load fixes even while another reader tab remains open.
-    await self.skipWaiting();
 })()));
+self.addEventListener('message', event => {
+    if (event.data?.type === 'SKIP_WAITING') event.waitUntil(self.skipWaiting());
+});
 self.addEventListener('activate', event => event.waitUntil((async () => {
     const names = await caches.keys();
     await Promise.all(names.filter(name => name.startsWith(cachePrefix) && name !== cacheName)
