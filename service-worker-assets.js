@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "Pb6tJ1lJ",
+  "version": "VEhyvsXn",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -194,7 +194,7 @@ self.assetsManifest = {
       "url": "book.svg"
     },
     {
-      "hash": "sha256-VvI3X57cghbaLTrqws7nT9b9oXHuvQ7GMCtRtO9QUAU=",
+      "hash": "sha256-u6lYfXT+36qP/3eMy5PdZDoWC722czuhLdSNuayLL1g=",
       "url": "css/app.css"
     },
     {
@@ -202,7 +202,7 @@ self.assetsManifest = {
       "url": "css/study.css"
     },
     {
-      "hash": "sha256-/QSDSvb2YrqjqZxz5xSko77wg6on728E5+5zsEbMmnM=",
+      "hash": "sha256-5ECfB9BhbA1V3esFUgIDqikyH9/2ltGFBIY1MPt96jo=",
       "url": "css/tikkun.css"
     },
     {

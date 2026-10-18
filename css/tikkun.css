@@ -53,7 +53,7 @@
 .tikkun-reader .tikkun-word:focus-visible { outline:2px solid #93601d; outline-offset:2px; z-index:1; }
 .tikkun-context { opacity:.28; }
 .tikkun-reader .nikud-sheva-na,.tikkun-reader .nikud-sheva-nach,.tikkun-reader .nikud-qamats-qatan { color:inherit; font-weight:400; }
-.tikkun-reader.color-nikud .nikud-sheva-na { color:#1d4ed8; text-decoration:underline; text-decoration-thickness:.045em; text-underline-offset:.07em; }
+.tikkun-reader.color-nikud .nikud-sheva-na { color:#1d4ed8; }
 .tikkun-reader.color-nikud .nikud-sheva-nach { color:#596579; }
 .tikkun-reader.color-nikud .nikud-qamats-qatan { color:#7e22ce; }
 .tikkun-word.qere::after { content:""; position:absolute; width:.14em; height:.14em; border-radius:50%; background:#947447; top:.15em; inset-inline-end:0; }
