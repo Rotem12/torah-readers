@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "kDzkXbXa",
+  "version": "Pb6tJ1lJ",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -42,8 +42,8 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.Extensions.Logging.3lly2ppfku.wasm"
     },
     {
-      "hash": "sha256-jNqHeT3OveYqqaOyRsi5e5aKDcu3p8K/qaOWIWIlfD0=",
-      "url": "_framework/Microsoft.Extensions.Logging.Abstractions.s819wbcm2y.wasm"
+      "hash": "sha256-2t4TAQn0xokJ7Mco2BIHVVdMkAEiTDaDy5A7QGFwuS8=",
+      "url": "_framework/Microsoft.Extensions.Logging.Abstractions.mpsq3iit8w.wasm"
     },
     {
       "hash": "sha256-Cb23UqG7cGF5BQcY7t9uQF93CxmshSCFl7gYh338cN8=",
@@ -150,16 +150,20 @@ self.assetsManifest = {
       "url": "_framework/System.Threading.ashn1xtaun.wasm"
     },
     {
-      "hash": "sha256-WQC6zhcC8FGRTIn06DgNZlYbJENmv64h1tJpmYR759Q=",
-      "url": "_framework/TorahReaders.Core.vutq2hcgud.wasm"
+      "hash": "sha256-IFZAuBeZjaIsTIO8HWrlTyAHYvRhkDG7jkKWHYv+3Ps=",
+      "url": "_framework/TorahReaders.Core.shyqhpzdzt.wasm"
     },
     {
-      "hash": "sha256-g2sTx4A986uncyKtmcEmeVlGxsdBs9D/TZWhWb4tQgc=",
-      "url": "_framework/TorahReaders.Web.h30c5pinjs.wasm"
+      "hash": "sha256-GqfuN8U5ZiDOfb7BV5+Hp2W4BgMdiwAQbL2crnNETGI=",
+      "url": "_framework/TorahReaders.Web.azjn8vntux.wasm"
     },
     {
       "hash": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
+    },
+    {
+      "hash": "sha256-qo+h/N/SVgVbtGlZdhG37MQtnmuGWwIVuFZUD+BPbQc=",
+      "url": "_framework/dotnet.65n6x9lwro.js"
     },
     {
       "hash": "sha256-//GZeYgjUoxGpPK0TDGntOZk0L95XIFJV8EA+7Wfffk=",
@@ -172,10 +176,6 @@ self.assetsManifest = {
     {
       "hash": "sha256-muN076HgyOCoAaid7zD7a2/GN7aQ7tmK/BzdnKgw78g=",
       "url": "_framework/dotnet.runtime.azrfhwb804.js"
-    },
-    {
-      "hash": "sha256-HFhlTymF2hkkpVrx1GdTms/pviPjEogYsUhCxEqgxvg=",
-      "url": "_framework/dotnet.wv22tgyxck.js"
     },
     {
       "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -362,7 +362,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-Phm20iQ0jbQzNcPs1MCfnOshjRj8kVwXRiUsmzzVMbg=",
+      "hash": "sha256-3IDh+JA+D2mrnKlZy7epKn79lO6cOaXTeaOTgsP+8oM=",
       "url": "index.html"
     },
     {
@@ -370,12 +370,12 @@ self.assetsManifest = {
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-J+NBy2OtSIYUdvCHT5PzXSS7XvhSWxyOAdypxk8FpzY=",
-      "url": "nikud.rr4c0gs52c.mjs"
+      "hash": "sha256-HM8TWkj6GdiSCjFykt2xJolgd30fTwKP1IPF8S4VUak=",
+      "url": "nikud.mjs"
     },
     {
       "hash": "sha256-b27kCE85BTQm+1ETR2h7h5jW8i+5H75QPFrBruJkGQ4=",
-      "url": "reader-browser.jfk0jpt5z1.js"
+      "url": "reader-browser.js"
     },
     {
       "hash": "sha256-QwQNh0nTzAmgTNj107ICFa+/phPzlDUOgg5S9it3DvE=",
@@ -383,19 +383,19 @@ self.assetsManifest = {
     },
     {
       "hash": "sha256-Jl9RYcM8oileKsfr7H0ZYbdPk0IADhf/62wKshhm1S0=",
-      "url": "study-dom.qzyw2xgm56.mjs"
+      "url": "study-dom.mjs"
     },
     {
       "hash": "sha256-qoU9m/Rx0sZk16J5zMQFpSP/M4DE+FHRwwYUOhvNlCw=",
-      "url": "study-entry.awq6cvxhog.js"
+      "url": "study-entry.js"
     },
     {
       "hash": "sha256-rwaipn66k0HxlouMYVHsa1tin0/YT9WDSoRA6XIlOfY=",
-      "url": "study-room.t9fsxrrcze.mjs"
+      "url": "study-room.mjs"
     },
     {
       "hash": "sha256-5F2tCJqhL92y8rZLs827Pe2ujFuoHd6YBzScGc3wSTc=",
-      "url": "tikkun.4ypjs35vy4.mjs"
+      "url": "tikkun.mjs"
     },
     {
       "hash": "sha256-eX4tvJi5LSHSHAlqrFjB7wdyVXivPjHnDhcn7yjwOhs=",
@@ -403,7 +403,7 @@ self.assetsManifest = {
     },
     {
       "hash": "sha256-svbZST63vMX12EIzeGFdQ0ijq5nYIuE5lvP0dLbAS7g=",
-      "url": "vendor/havarotjs-0.25.5.27xh7wa386.mjs"
+      "url": "vendor/havarotjs-0.25.5.mjs"
     },
     {
       "hash": "sha256-S8iApwbPec9cK7Coh8EIcqbNxoUnxNDkC68gA8aCkDQ=",
@@ -411,7 +411,7 @@ self.assetsManifest = {
     },
     {
       "hash": "sha256-WqmdhqnPx6TN5RpMXUulpb2IfpKFnIOiL4zC73IY+mA=",
-      "url": "vendor/supabase-js-2.117.3.mwtlgz9nda.mjs"
+      "url": "vendor/supabase-js-2.117.3.mjs"
     },
     {
       "hash": "sha256-M03Wgg4urqsgZOfFkAG4EFZnKKKKQafB2/abvuF9CTY=",

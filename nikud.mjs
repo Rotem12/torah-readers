@@ -5,13 +5,12 @@ const clusterPattern = /[א-ת][\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C
 const wordPattern = /[א-ת][\u0591-\u05C2\u05C4\u05C5\u05C7-\u05C9א-ת]*/gu;
 const normal = value => value.normalize("NFD");
 
-function shevas(word) {
-  // The source edition already distinguishes qamats qatan. Never infer or
-  // replace a source vowel. Use havarotjs's traditional syllabification rules:
-  // comparing them to the more restrictive Tiberian settings suppresses
-  // traditional vocal shevas after long vowels and meteg.
+function analyzeClusters(word) {
+  // Analyze traditional syllables, including qamats-qatan recognition. The
+  // returned text is only for analysis; rendered source characters are never
+  // replaced. Qamats qatan changes syllable boundaries and therefore shva.
   const analysis = new Text(word, {
-    article: true, longVowels: true, qametsQatan: false,
+    article: true, longVowels: true, qametsQatan: true,
     shevaAfterMeteg: true, shevaWithMeteg: true, sqnmlvy: true,
     wawShureq: true, holemHaser: "preserve", strict: true
   });
@@ -19,7 +18,8 @@ function shevas(word) {
   // objects, so identity across separate getter calls is not a safe test.
   return analysis.syllables.flatMap(syllable => syllable.clusters.map((cluster, index) => ({
     text: normal(cluster.text),
-    kind: !cluster.hasSheva ? "" : index === 0 ? "sheva-na" : "sheva-nach"
+    kind: !cluster.hasSheva ? "" : index === 0 ? "sheva-na" : "sheva-nach",
+    qamatsQatan: cluster.text.includes("\u05C7")
   }))).filter(cluster => /[א-ת]/u.test(cluster.text));
 }
 
@@ -30,13 +30,15 @@ export function marks(text) {
     const clusters = [...word[0].matchAll(clusterPattern)];
     let syllables = [];
     try {
-      syllables = shevas(word[0]);
+      syllables = analyzeClusters(word[0]);
     } catch { /* Unpointed, irregular and ketiv forms retain source rendering. */ }
     const aligned = syllables.length === clusters.length &&
-      clusters.every((cluster, index) => normal(cluster[0]) === syllables[index].text);
+      clusters.every((cluster, index) => normal(cluster[0]).replaceAll("\u05C7", "\u05B8") ===
+        syllables[index].text.replaceAll("\u05C7", "\u05B8"));
     for (let index = 0; index < clusters.length; index++) {
       const cluster = clusters[index];
-      let kind = cluster[0].includes("\u05C7") ? "qamats-qatan" : cluster[0].includes("\u05B8") ? "qamats" : "";
+      let kind = cluster[0].includes("\u05C7") || aligned && syllables[index].qamatsQatan
+        ? "qamats-qatan" : cluster[0].includes("\u05B8") ? "qamats" : "";
       if (cluster[0].includes("\u05C8")) kind = "sheva-na";
       else if (cluster[0].includes("\u05B0")) {
         // Havarot documents initial shva in שתים as an exception. Do not
