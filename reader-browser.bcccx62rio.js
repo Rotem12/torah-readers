@@ -89,6 +89,13 @@
     },
     stopCheckpoint() { saveViewport(); currentSpot = null; },
     viewport,
+    scrollToMarker(id) {
+      const row = document.getElementById(id);
+      if (!row) return false;
+      const top = document.querySelector(".reader-toolbar")?.getBoundingClientRect().bottom || 0;
+      window.scrollTo({top:window.scrollY + row.getBoundingClientRect().top - top - 8, behavior:"smooth"});
+      return true;
+    },
     async restoreAnchor(reference, start, offset) {
       restoring = true;
       try {

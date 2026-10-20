@@ -65,6 +65,10 @@ h1,h2,p { margin:0; }
 .navigation-row { display:grid; grid-template-columns:40px 40px 96px minmax(0,1fr); gap:2px; }
 .navigation-row select,.navigation-row input,.search-scope select { min-width:0; border:1px solid #e2e8f0; border-radius:0; padding:4px; background:white; color:#334155; font-size:13px; min-height:40px; }
 .navigation-row>button { padding:0; }
+.aliyah-jump { display:flex; align-items:center; gap:6px; padding:2px 0 0; }
+.aliyah-jump label { flex:0 0 auto; color:#64748b; font-size:11px; white-space:nowrap; }
+.aliyah-jump select { flex:1; min-width:0; min-height:34px; padding:3px 5px; border:1px solid #e2e8f0; background:white; color:#334155; font-size:12px; }
+.aliyah-jump select:focus-visible { outline:3px solid #60a5fa; outline-offset:2px; }
 .reader-search { display:flex; min-width:0; gap:1px; }
 .reader-search input { width:100%; flex:1; min-width:0; }
 .reader-search button { width:36px; padding:0; font-size:24px; flex:0 0 auto; }

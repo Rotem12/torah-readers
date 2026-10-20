@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "VEhyvsXn",
+  "version": "AbHwjwXV",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -42,8 +42,8 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.Extensions.Logging.3lly2ppfku.wasm"
     },
     {
-      "hash": "sha256-2t4TAQn0xokJ7Mco2BIHVVdMkAEiTDaDy5A7QGFwuS8=",
-      "url": "_framework/Microsoft.Extensions.Logging.Abstractions.mpsq3iit8w.wasm"
+      "hash": "sha256-jNqHeT3OveYqqaOyRsi5e5aKDcu3p8K/qaOWIWIlfD0=",
+      "url": "_framework/Microsoft.Extensions.Logging.Abstractions.s819wbcm2y.wasm"
     },
     {
       "hash": "sha256-Cb23UqG7cGF5BQcY7t9uQF93CxmshSCFl7gYh338cN8=",
@@ -150,20 +150,16 @@ self.assetsManifest = {
       "url": "_framework/System.Threading.ashn1xtaun.wasm"
     },
     {
-      "hash": "sha256-IFZAuBeZjaIsTIO8HWrlTyAHYvRhkDG7jkKWHYv+3Ps=",
-      "url": "_framework/TorahReaders.Core.shyqhpzdzt.wasm"
+      "hash": "sha256-JgYpGUsY77d+Yp0GTemMf+HbMNoHAxqlQ/ceBIxuccY=",
+      "url": "_framework/TorahReaders.Core.mkgt992i76.wasm"
     },
     {
-      "hash": "sha256-GqfuN8U5ZiDOfb7BV5+Hp2W4BgMdiwAQbL2crnNETGI=",
-      "url": "_framework/TorahReaders.Web.azjn8vntux.wasm"
+      "hash": "sha256-NXqSCKUWitwhxYDK7cfLEmdanT1GnR+ET2d35JWhJiY=",
+      "url": "_framework/TorahReaders.Web.pvcoj81ged.wasm"
     },
     {
       "hash": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
-    },
-    {
-      "hash": "sha256-qo+h/N/SVgVbtGlZdhG37MQtnmuGWwIVuFZUD+BPbQc=",
-      "url": "_framework/dotnet.65n6x9lwro.js"
     },
     {
       "hash": "sha256-//GZeYgjUoxGpPK0TDGntOZk0L95XIFJV8EA+7Wfffk=",
@@ -176,6 +172,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-muN076HgyOCoAaid7zD7a2/GN7aQ7tmK/BzdnKgw78g=",
       "url": "_framework/dotnet.runtime.azrfhwb804.js"
+    },
+    {
+      "hash": "sha256-EkASbVSUs/G3mUl5Fn94UtRiAFxkWZVyCHqeRvkZBiQ=",
+      "url": "_framework/dotnet.y3qz5nzxyu.js"
     },
     {
       "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -194,7 +194,7 @@ self.assetsManifest = {
       "url": "book.svg"
     },
     {
-      "hash": "sha256-u6lYfXT+36qP/3eMy5PdZDoWC722czuhLdSNuayLL1g=",
+      "hash": "sha256-eezXnix3Q+RtUArGPUQh3cgQsemiKYLXZx2tcZeqbjc=",
       "url": "css/app.css"
     },
     {
@@ -362,7 +362,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-3IDh+JA+D2mrnKlZy7epKn79lO6cOaXTeaOTgsP+8oM=",
+      "hash": "sha256-VRwARNHeKENIMcXrTk12DWL+FQjjuP51QUsJv6OKzqU=",
       "url": "index.html"
     },
     {
@@ -371,11 +371,11 @@ self.assetsManifest = {
     },
     {
       "hash": "sha256-HM8TWkj6GdiSCjFykt2xJolgd30fTwKP1IPF8S4VUak=",
-      "url": "nikud.mjs"
+      "url": "nikud.4gejpmlpft.mjs"
     },
     {
-      "hash": "sha256-b27kCE85BTQm+1ETR2h7h5jW8i+5H75QPFrBruJkGQ4=",
-      "url": "reader-browser.js"
+      "hash": "sha256-hb2Ylte3S/zz2EqmW9SUKgJp2TjQGFpsXIUahjCBc+s=",
+      "url": "reader-browser.bcccx62rio.js"
     },
     {
       "hash": "sha256-QwQNh0nTzAmgTNj107ICFa+/phPzlDUOgg5S9it3DvE=",
@@ -383,19 +383,19 @@ self.assetsManifest = {
     },
     {
       "hash": "sha256-Jl9RYcM8oileKsfr7H0ZYbdPk0IADhf/62wKshhm1S0=",
-      "url": "study-dom.mjs"
+      "url": "study-dom.qzyw2xgm56.mjs"
     },
     {
       "hash": "sha256-qoU9m/Rx0sZk16J5zMQFpSP/M4DE+FHRwwYUOhvNlCw=",
-      "url": "study-entry.js"
+      "url": "study-entry.awq6cvxhog.js"
     },
     {
       "hash": "sha256-rwaipn66k0HxlouMYVHsa1tin0/YT9WDSoRA6XIlOfY=",
-      "url": "study-room.mjs"
+      "url": "study-room.t9fsxrrcze.mjs"
     },
     {
       "hash": "sha256-5F2tCJqhL92y8rZLs827Pe2ujFuoHd6YBzScGc3wSTc=",
-      "url": "tikkun.mjs"
+      "url": "tikkun.4ypjs35vy4.mjs"
     },
     {
       "hash": "sha256-eX4tvJi5LSHSHAlqrFjB7wdyVXivPjHnDhcn7yjwOhs=",
@@ -403,7 +403,7 @@ self.assetsManifest = {
     },
     {
       "hash": "sha256-svbZST63vMX12EIzeGFdQ0ijq5nYIuE5lvP0dLbAS7g=",
-      "url": "vendor/havarotjs-0.25.5.mjs"
+      "url": "vendor/havarotjs-0.25.5.27xh7wa386.mjs"
     },
     {
       "hash": "sha256-S8iApwbPec9cK7Coh8EIcqbNxoUnxNDkC68gA8aCkDQ=",
@@ -411,7 +411,7 @@ self.assetsManifest = {
     },
     {
       "hash": "sha256-WqmdhqnPx6TN5RpMXUulpb2IfpKFnIOiL4zC73IY+mA=",
-      "url": "vendor/supabase-js-2.117.3.mjs"
+      "url": "vendor/supabase-js-2.117.3.mwtlgz9nda.mjs"
     },
     {
       "hash": "sha256-M03Wgg4urqsgZOfFkAG4EFZnKKKKQafB2/abvuF9CTY=",
